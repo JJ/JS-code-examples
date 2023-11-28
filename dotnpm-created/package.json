@@ -1,0 +1,11 @@
+{
+  "name": "dotnpm-created",
+  "version": "1.0.0",
+  "description": "Test file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"test\""
+  },
+  "author": "",
+  "license": "ISC"
+}

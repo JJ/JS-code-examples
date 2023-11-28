@@ -1,0 +1,13 @@
+FROM node:21-alpine
+
+RUN mkdir -p /app/test && chown -R node:node /app && npm install -g npm@latest
+
+USER node
+
+WORKDIR /app
+
+COPY package.json ./
+
+WORKDIR /app/test
+
+ENTRYPOINT ["npm", "--logs-max=0", "run", "test"]
