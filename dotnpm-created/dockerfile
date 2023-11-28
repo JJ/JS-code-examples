@@ -10,4 +10,6 @@ COPY package.json ./
 
 WORKDIR /app/test
 
+RUN npm config ls
+
 ENTRYPOINT ["npm", "--logs-max=0", "run", "test"]
